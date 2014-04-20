@@ -1,0 +1,11 @@
+{
+
+    "require": {
+        "twitter/bootstrap": "3.0.x-dev",
+        "components/jquery": "2.1.0",
+        "components/jqueryui": "1.10.4",
+
+    
+    "mrclay/minify": "2.2.0"
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="kzhukov" default="build-dev">
+
+    <!-- ============================================  -->
+    <!-- Target: prepare                               -->
+    <!-- ============================================  -->
+    <target name="build-dev">
+        <copy todir="./static/js">
+            <fileset dir="vendor/components/jquery">
+                <include name="jquery.js" />
+            </fileset>
+        </copy>
+        <exec command="vendor/mrclay/minify/min_extras/cli/minify.php -o static/js/main.js static_dev/js/*.js" />
+    </target>
+</project>
